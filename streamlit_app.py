@@ -1,6 +1,10 @@
 import streamlit as st
 import os
 import json
+
+# Ensure playwright browser is installed for Streamlit Cloud
+os.system("playwright install chromium")
+
 from my_scraper.graphs import SmartScraperGraph
 
 st.set_page_config(page_title="MyScraper Dashboard", page_icon="✨")
